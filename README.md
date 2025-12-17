@@ -286,8 +286,5 @@ Training on CIC-IDS2018 dataset with 70/10/20 split:
 - **Institution**: Faculty of Engineering and Technology, Sunway University
 
 ## 📧 Contact
-
-**Project Author**: [Wilson Chang]
-- Email: 23026149@imail.sunway.edu.my
-
+Wilson Chang (23026149@imail.sunway.edu.my)
 ---
