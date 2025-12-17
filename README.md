@@ -2,23 +2,6 @@
 
 A real-time, ML-powered Intrusion Detection System (IDS) for detecting DoS attacks in cloud network environments. This system leverages XGBoost classifiers trained on the CIC-IDS2018 dataset to identify malicious network traffic with decent accuracy in AWS infrastructure.
 
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Architecture](#architecture)
-- [System Requirements](#system-requirements)
-- [Installation](#installation)
-- [Dataset](#dataset)
-- [Model Training](#model-training)
-- [Deployment](#deployment)
-- [Evaluation](#evaluation)
-- [Project Structure](#project-structure)
-- [Results](#results)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
-
 ## 🎯 Overview
 
 This capstone project implements an end-to-end machine learning-based network intrusion detection system capable of identifying DDoS attacks in real-time. The system processes live network traffic, extracts flow-based features, and uses trained ensemble models to classify traffic as benign or malicious.
@@ -275,23 +258,25 @@ Generates:
 
 Training on CIC-IDS2018 dataset with 70/10/20 split:
 
-| Metric | XGBoost | Random Forest | Ensemble |
-|--------|---------|---------------|----------|
-| **Accuracy** | 99.81% | 99.78% | 99.83% |
-| **Precision** | 99.76% | 99.71% | 99.79% |
-| **Recall** | 99.85% | 99.83% | 99.87% |
-| **F1-Score** | 99.80% | 99.77% | 99.83% |
+| Metric | XGBoost |
+|--------|---------|
+| **Accuracy** | 95.33% | 
+| **Precision** | 95.95% |
+| **Recall** | 95.33% |
+| **F1-Score** | 95.38% | 
 
 ### Real-World Performance (AWS Deployment)
 
-Live traffic evaluation with ground truth labeling:
+2-hour Live traffic evaluation with ground truth labeling:
 
-| Scenario | Accuracy | Precision | Recall | F1-Score |
-|----------|----------|-----------|--------|----------|
-| **Single Attacker** | 96.4% | 95.0% | 98.2% | 96.6% |
-| **Dual Attackers** | 94.8% | 92.3% | 97.5% | 94.8% |
-| **Mixed Traffic** | 93.2% | 90.1% | 96.8% | 93.3% |
-
+| Metric | XGBoost |
+|--------|---------|
+| **Accuracy** | 83.34% | 
+| **Precision** | 96.20% |
+| **Recall** | 71.11% |
+| **F1-Score** | 81.77% |
+| **False Positive Rate** | 3.11% | 
+| **False Negative Rate** | 28.89% |
 
 ## 🙏 Acknowledgments
 
